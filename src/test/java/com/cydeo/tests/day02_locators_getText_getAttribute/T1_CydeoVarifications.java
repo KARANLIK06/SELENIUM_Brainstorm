@@ -34,7 +34,7 @@ public class T1_CydeoVarifications {
         String expectedTitle="Practice";
         String actualTitle = driver.getTitle();
 
-        if (actualTitle.equals("Practice")){
+        if (actualTitle.equals(expectedTitle)){
             System.out.println("Title verification PASSED");
         }else{
             System.out.println("Title verification FAILED");
