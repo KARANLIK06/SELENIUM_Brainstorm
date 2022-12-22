@@ -49,8 +49,12 @@ public class T2_Linktext_Practice {
             System.out.println("Title verification FAILED");
 
         }
+
+        // closing any current tab
         driver.close();
 
+        //  close all browser window opened by driver
+        //  driver.quit();
     }
 }
 /*
