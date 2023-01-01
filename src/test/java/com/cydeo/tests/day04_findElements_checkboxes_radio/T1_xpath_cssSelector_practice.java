@@ -47,10 +47,23 @@ public class T1_xpath_cssSelector_practice {
         WebElement emailInputBox_ex2 = driver.findElement(By.xpath("//input[contains(@pattern,'a-z')]"));
 
 
-
         // e. “Retrieve password” button
+        WebElement retrievePasswordButton= driver.findElement(By.xpath("//button[@id='form_submit']"));
+
+
         // f. “Powered by Cydeo text
+        WebElement poweredByCydeo = driver.findElement(By.xpath("//div[@style='text-align: center;']"));
+
         // 4. Verify all web elements are displayed.
+        System.out.println("homeLink_ex1.isDisplayed() = " + homeLink_ex1.isDisplayed());
+        System.out.println("header_ex1.isDisplayed() = " + header_ex1.isDisplayed());
+        System.out.println("email_ex1.isDisplayed() = " + email_ex1.isDisplayed());
+        System.out.println("emailInputBox_ex1.isDisplayed() = " + emailInputBox_ex1.isDisplayed());
+        System.out.println("retrievePasswordButton.isDisplayed() = " + retrievePasswordButton.isDisplayed());
+        System.out.println("poweredByCydeo.isDisplayed() = " + poweredByCydeo.isDisplayed());
+
+
+
         // First solve the task with using cssSelector only. Try to create 2 different cssSelector if possible
         //Then solve the task using XPATH only. Try to create 2 different XPATH locator if possible
     }
