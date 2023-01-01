@@ -96,6 +96,8 @@ COMMONLY USED XPATH SYNTAXES:
 #3- //tagName[.='text']  same as //tagName[text()='text']
 #4- //*[@attribute='value']
 
+//tagName[contains(text(),'partialtext')]
+
 --> How to move lines up and down without having to copy paste:
     - Keep your cursor in the line you want to move
     - MAC: command + shift + up or down arrow
