@@ -32,17 +32,7 @@ public class T4_LibraryLoginPage {
 
 
         // 6. Verify: visually “Sorry, Wrong Email or Password” displayed
-     /*   WebElement alertmessage = driver.findElement(By.className("alert"));
 
-        if (alertmessage.getText().equals("Sorry, Wrong Email or Password")) {
-            System.out.println("Message is PASSED");
-        } else {
-            System.out.println("Message is FAILED");
-
-
-        }
-
-      */
     }
 }
 /*
