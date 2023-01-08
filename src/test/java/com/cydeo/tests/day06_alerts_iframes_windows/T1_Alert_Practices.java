@@ -53,4 +53,5 @@ public class T1_Alert_Practices {
         Assert.assertEquals(actualTxt,expectedTxt,"Actual result text is not as expected!!! ");
 
     }
+
 }
