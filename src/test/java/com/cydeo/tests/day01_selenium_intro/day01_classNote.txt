@@ -29,7 +29,7 @@ HTML CLASS REVIEW:
 
     syntax: <openingTag> CONTENT </closingTag>.
 
-    Ex: p, h, head, body, html, li, div, ul, u, strong, button, select, span, em,
+    Ex:  h,p, head, body, html, li, div, ul, u, strong, button, select, span, em,
     a
 
 #2- Unpaired tags     :
