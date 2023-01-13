@@ -83,7 +83,7 @@ public class T3_Crm_Login {
         // 6. Verify title is as expected:
         // Expected: Portal
 
-        BrowserUtils.verifyTitle(driver,"(1) Portal");
+        BrowserUtils.verifyTitle(driver,"Portal");
 
 
     }

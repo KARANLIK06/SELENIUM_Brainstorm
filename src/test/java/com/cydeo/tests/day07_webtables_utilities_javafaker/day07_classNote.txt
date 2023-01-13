@@ -350,7 +350,7 @@ P10_ WRITE A LOCATOR THAT RETURNS JASONS DUE AMOUNT BASED ON JASONS NAME
 2- We can use the sibling method from xpath
     //table[@id='table1']//tbody//td[.='Tim']/following-sibling::td[2]
 
-P11_ WRITE A LOCATOR THAT RETURNS Tim's last name  BASED ON tim's NAME
+P11_
 
     //table[@id='table1']/tbody//td[.='Tim']/../td[1]
 

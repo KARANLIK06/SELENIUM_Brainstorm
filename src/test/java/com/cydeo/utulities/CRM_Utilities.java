@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class CRM_Utilities {
+
     public static void crm_login(WebDriver driver){
 
         // 3. Enter valid username
