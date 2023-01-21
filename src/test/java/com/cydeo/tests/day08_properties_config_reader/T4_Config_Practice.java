@@ -1,18 +1,15 @@
 package com.cydeo.tests.day08_properties_config_reader;
 
 import com.cydeo.utulities.ConfigurationReader;
-import com.cydeo.utulities.WebDriverFactory;
+import com.cydeo.utulities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
-
 public class T4_Config_Practice {
+   /*
     public WebDriver driver;
 
     @BeforeMethod
@@ -28,18 +25,22 @@ public class T4_Config_Practice {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        // 2- Go to: https://google.com
-        driver.get("https://google.com");
-    }
+
+    */
+
+
     @Test
     public void google_search_test(){
-    // 3- Write “apple” in search box
-        WebElement searchbox= driver.findElement(By.xpath("//input[@name='q']"));
+        // 2- Go to: https://google.com
+        Driver.getDriver().get("https://google.com");
+
+        // 3- Write “apple” in search box
+        WebElement searchbox= Driver.getDriver().findElement(By.xpath("//input[@name='q']"));
         searchbox.sendKeys(ConfigurationReader.getProperty("searchValue")+ Keys.ENTER);
     // 4- Verify title:
     // Expected: apple - Google'da Ara
         String expectedTitle=ConfigurationReader.getProperty("searchValue")+" - Google'da Ara";
-        String actualTitle= driver.getTitle();
+        String actualTitle= Driver.getDriver().getTitle();
         Assert.assertEquals(actualTitle,expectedTitle);
 
     }
