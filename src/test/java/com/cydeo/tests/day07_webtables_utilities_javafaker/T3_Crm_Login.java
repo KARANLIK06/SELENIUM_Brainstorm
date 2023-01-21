@@ -1,26 +1,14 @@
 package com.cydeo.tests.day07_webtables_utilities_javafaker;
 
+import com.cydeo.tests.base.TestBase;
 import com.cydeo.utulities.BrowserUtils;
 import com.cydeo.utulities.CRM_Utilities;
-import com.cydeo.utulities.WebDriverFactory;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.TimeUnit;
+public class T3_Crm_Login extends TestBase {
 
-public class T3_Crm_Login {
-    public WebDriver driver;
-    @BeforeMethod
-    public void setupMethod(){
-        //TC #3: Login scenario
-        //1. Create new test and make set ups
-        driver= WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
     @Test
     public void crm_login_test1(){
         // 2. Go to : http://login1.nextbasecrm.com/
