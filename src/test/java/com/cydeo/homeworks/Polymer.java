@@ -40,7 +40,11 @@ public class Polymer {
         WebElement secondItemEdit= driver.findElement(By.xpath("(//label[@class='style-scope td-item'])[2]"));
         Actions actions = new Actions(driver);
         actions.doubleClick(secondItemEdit)
-                .sendKeys("Edited the content of the second todo item").perform();
+                .keyDown(Keys.CONTROL)
+                .sendKeys("a")
+                .keyUp(Keys.CONTROL)
+                .sendKeys(Keys.BACK_SPACE).pause(3000)
+                .sendKeys("Edited the content of the second todo item"+Keys.ENTER).perform();
 
 
     }
